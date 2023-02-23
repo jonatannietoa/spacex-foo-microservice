@@ -19,7 +19,7 @@ public class Falcon9FooService implements FooService {
 
   @Override
   public FooCommandModelOutput check() throws FooException {
-    Foo foo = new Foo("Test", "TrolExcep", "JWTToken");
+    Foo foo = new Foo("Test", "Trol", "JWTToken");
 
     return objectMapper.convertValue(foo, FooCommandModelOutput.class);
   }
