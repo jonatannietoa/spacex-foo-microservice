@@ -29,6 +29,10 @@ dependencies {
 
 	// AWS Lambda Dependencies
 	implementation 'com.amazonaws.serverless:aws-serverless-java-container-springboot2:1.9.1'
+	implementation 'io.lumigo:lumigo-agent:1.0.38'
+	implementation('io.lumigo:java-tracer:1.0.38') {
+		exclude group: 'com.sun', module: 'tools'
+	}
 }
 
 tasks.named('test') {
