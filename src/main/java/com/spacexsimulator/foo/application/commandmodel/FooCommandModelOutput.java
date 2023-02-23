@@ -10,6 +10,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class FooCommandModelOutput {
-    private String var1;
-    private String var2;
+  private String var1;
+  private String var2;
 }

@@ -10,17 +10,17 @@ import org.springframework.stereotype.Service;
 @Service
 public class Falcon9FooService implements FooService {
 
-    private ObjectMapper objectMapper;
+  private ObjectMapper objectMapper;
 
-    @Autowired
-    public Falcon9FooService(ObjectMapper objectMapper) {
-        this.objectMapper = objectMapper;
-    }
+  @Autowired
+  public Falcon9FooService(ObjectMapper objectMapper) {
+    this.objectMapper = objectMapper;
+  }
 
-    @Override
-    public FooCommandModelOutput check() throws FooException {
-        Foo foo = new Foo("Test", "TrolExcep", "JWTToken");
+  @Override
+  public FooCommandModelOutput check() throws FooException {
+    Foo foo = new Foo("Test", "TrolExcep", "JWTToken");
 
-        return objectMapper.convertValue(foo, FooCommandModelOutput.class);
-    }
+    return objectMapper.convertValue(foo, FooCommandModelOutput.class);
+  }
 }

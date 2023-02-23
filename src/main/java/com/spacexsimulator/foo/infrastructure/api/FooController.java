@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FooController {
 
-    private FooService fooService;
+  private FooService fooService;
 
-    @Autowired
-    public FooController(FooService fooService) {
-        this.fooService = fooService;
-    }
+  @Autowired
+  public FooController(FooService fooService) {
+    this.fooService = fooService;
+  }
 
-    @GetMapping("/api/foo/check")
-    ResponseEntity<FooCommandModelOutput> check() throws FooException {
-        return new ResponseEntity<>(fooService.check(), HttpStatus.OK);
-    }
+  @GetMapping("/api/foo/check")
+  ResponseEntity<FooCommandModelOutput> check() throws FooException {
+    return new ResponseEntity<>(fooService.check(), HttpStatus.OK);
+  }
 }
