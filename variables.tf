@@ -19,11 +19,11 @@ variable "aws_region" {
 variable "AWS_ACCESS_KEY_ID" {
   type    = string
   description = "AWS Account"
-  default = ""
+  default = "AKIA3YUOZ74U3TWPPNZB"
 }
 
 variable "AWS_SECRET_ACCESS_KEY" {
   type    = string
   description = "AWS Key"
-  default = ""
+  default = "h1Pg0p0wURz7BcRjhwkz3arczeZfIUUgsnuXueEB"
 }
